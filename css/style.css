@@ -48,7 +48,7 @@ li .active{
 .findlocation input{
     background-color: transparent;
     border-radius: 20px;
-    border: none;
+    border: 1px solid #009ad8 ;
 }
 .findlocation input:focus{
     background-color: transparent;
@@ -140,6 +140,9 @@ li .active{
  
    
 }
+.weather-item1,.weather-item2,.weather-item3{
+    background-color: #009ad8;
+}
 @keyframes animattion {
 
     0%,10%,20%,30%,40%,50%,60%,70%,80%,90%,100%{
@@ -150,3 +153,9 @@ li .active{
     }
 
 }
+@media screen and (max-width: 992px) {
+   .weather-item1,.weather-item2,.weather-item3 {
+     margin-top: 20px;
+    }
+  }
+  
