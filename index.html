@@ -1,0 +1,189 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body >
+
+    <section class="container header ">
+       <!--block of main navbar-->   
+          <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <i class="fas fa-cloud-sun mt-1 fa-2x main-color"></i>
+                <h4 class="fw-bolder main-color">weather</h4>
+               
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse  " id="navbarScroll">
+                <ul class="navbar-nav ms-auto  my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Live cameras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">contacts</a>
+                  </li>
+                
+             
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+          <!--anmi-->
+          <div class="  danimation  d-flex ms-5 text-center justify-content-center">
+            <i class="fas fa-arrow-down fa-3x main-color  " ></i>
+          </div>
+           <!--block of searchinput-->   
+         <div class="row py-5">
+           <div class="col-lg-12">
+            <div class="findlocation position-relative">
+              <input type="text" class="form-control text-white fs-5 " id="searchInput" placeholder="Find your location...">
+           <button class="btn btn-info position-absolute" id="searchBtn">Find</button>
+           </div>
+           </div>
+         </div>
+          <!--block of country name-->   
+         <div class="container text-center text-white py-1 ">
+           <h2 class="fw-bolder country  fs-1"></h2>
+           <h2 class=" city fs-5 main-color"></h2>
+         </div>
+         <!--block of for cast-->      
+         <div class=" container forcast row my-5  text-white d-none ">
+             <div class="col-md-4">
+                 <div class="weather-item1 ">
+                     <div class="  weather-header1 d-flex justify-content-between">
+                         <h4 id="today"></h4>
+                         <h4 id='dFToday'></h4>
+
+                     </div>
+                     <div class="weather-content1 p-3 text-white">
+                          <h4 class="fw-bold"></h4>
+                          <div class="degree d-flex  justify-content-between py-2">
+                            <div class="num w-50">
+                              <h2 class="fw-bolder ms-2 me-2"></h2>
+                            </div>
+                            <div class="dicon w-25 mt-3">
+                              <img src="" alt="">
+                            </div>
+                         
+                          </div>
+                          <h6 class="main-color"></h6>
+                          <div class="iconsB d-none justify-content-around pt-3 my-2">
+                          <span class="d-flex rain me-2">
+                            <i class="fas fa-umbrella "></i>
+                            <p id="rainVlue"></p>
+                          </span>
+                          <span class="d-flex wind me-2">
+                            <i class="fas fa-wind "></i>
+                            
+                            <p id="windVlue"></p>
+                          </span>
+                          <span class="d-flex .windD me-2">
+                            <i class="far fa-compass"></i>
+                            
+                            <p id="windDVlue"></p>
+                          </span>
+                        </div>
+
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                <div class="weather-item2">
+                    <div class="weather-header2 text-center">
+                        <h4 class="dft"></h4>
+                        
+                    </div>
+                    <div class="weather-content2 text-center">
+                      <img src="" alt="" class="py-3" >
+                      <h2 class="tmax-tem py-2 fw-bolder text-white"></h2>
+                      <h6 class="tmin-tem py-2"></h6>
+                      <h6 class="tcondition-text py-2  main-color"></h6>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="weather-item3">
+                  <div class="weather-header3 text-center">
+                    <h4 class="adft"></h4>
+                    
+                </div>
+                <div class="weather-content3 text-center">
+                  <img src="" alt="" class="py-3" >
+                  <h2 class="atmax-tem py-2 fw-bolder text-white"></h2>
+                  <h6 class="atmin-tem py-2"></h6>
+                  <h6 class="atcondition-text py-2  main-color"></h6>
+                    
+                </div>
+                </div>
+            </div>
+         </div>
+  </section>
+       <!--block of footer-->   
+    <section class="footer container-fluid py-5">
+        <div class="container">
+            <div class="row  py-3">
+                <div class="col-md-8 ">
+                    <div class="subscribe  position-relative">
+                      
+                        <input type="text" id="inputMail" class="form-control text-white " placeholder="Enter your Email to Subscribe">
+                     <button class="btn btn-info position-absolute" id="subbtn">Subscribe</button>
+                     <span id="alertEmail text-white "></span>
+                    </div>
+                   
+     
+                </div>
+                <div class="col-md-2 offset-2 ">
+                <div class="icons d-flex">
+                    <div class="icon-item">
+                        <i class="fab fa-facebook-f main-color"></i>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fab fa-twitter  main-color"></i>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fab fa-google-plus-g  main-color"></i>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fab fa-pinterest-p main-color"></i>
+                    </div>
+                  
+                
+                 
+             
+     
+     
+                </div>
+     
+             </div>
+     
+     
+            </div>
+            <p class="text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+     
+    </section>
+ 
+  <script src="jquery-3.6.0.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
